@@ -29,11 +29,13 @@ A minimalistic note taking web app, that automatically saves your notes as you t
 2. Unzip the archive and upload the files from the `dist` folder to your web server
 3. And you're done :heavy_check_mark:
 
-## License
+## License & Credits
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](http://www.apache.org/licenses/LICENSE-2.0) file for details
 
-Original Project can be found here: [https://github.com/pereorga/minimalist-web-notepad](https://github.com/pereorga/minimalist-web-notepad), but I improved it a bit and added some features.
+Based on pereorga's project: [https://github.com/pereorga/minimalist-web-notepad](https://github.com/pereorga/minimalist-web-notepad), but I improved it a bit and added some features.
+
+Some icons are from [Icons8](https://icons8.com)
 
 ***
 &copy; 2023 JMcrafter26 | Live Notes
