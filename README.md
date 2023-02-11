@@ -1,6 +1,9 @@
 # Live Notes
 
 <img src="https://raw.githubusercontent.com/JMcrafter26/live-notes/main/.github/banner.jpg" alt="Banner">
+
+<img src="https://api.jm26.net/badge?g&label=Live&message=Notes&color=6fcde9" height="20px" alt="Live Notes" style="display: inline-block;"> <img src="https://api.jm26.net/badge/beta?url=https://shields.io/github/stars/jmcrafter26/live-notes.json&color=FFDB2D&label=Stars" height="20px" style="display: inline-block;"> <img src="https://api.jm26.net/badge/beta?url=https://raw.githubusercontent.com/JMcrafter26/status/master/api/test-jm26-net/uptime.json&format=cap-l" height="20px" style="display: inline-block;">
+
 A minimalistic note taking web app, that automatically saves your notes as you type and allows you to share them with others in real time.
 
 ## Features
