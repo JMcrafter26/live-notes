@@ -1,5 +1,6 @@
 # Live Notes
 
+<img src="https://raw.githubusercontent.com/JMcrafter26/live-notes/main/.github/banner.jpg" alt="Banner">
 A minimalistic note taking web app, that automatically saves your notes as you type and allows you to share them with others in real time.
 
 ## Features
