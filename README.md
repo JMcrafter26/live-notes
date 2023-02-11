@@ -20,7 +20,7 @@ A minimalistic note taking web app, that automatically saves your notes as you t
 ## How to install
 
 1. Download the latest release from [https://github.com/JMcrafter26/live-notes/releases/latest](https://github.com/JMcrafter26/live-notes/releases/latest)
-2. Unzip the archive and upload the files from the `src` folder to your web server
+2. Unzip the archive and upload the files from the `dist` folder to your web server
 3. And you're done :smile:
 
 ## License
