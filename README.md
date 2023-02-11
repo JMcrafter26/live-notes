@@ -16,13 +16,14 @@ A minimalistic note taking web app, that automatically saves your notes as you t
 ## How to use
 
 1. Go to [https://test.jm26.net/live-notes/](https://test.jm26.net/live-notes/) or your own instance
-2. And start typing :smile:
+2. And start typing :tada:
+
 
 ## How to install
 
 1. Download the latest release from [https://github.com/JMcrafter26/live-notes/releases/latest](https://github.com/JMcrafter26/live-notes/releases/latest)
 2. Unzip the archive and upload the files from the `dist` folder to your web server
-3. And you're done :smile:
+3. And you're done :heavy_check_mark:
 
 ## License
 
