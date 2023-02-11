@@ -25,7 +25,7 @@ $path = $save_path . '/' . $_GET['note'];
 
 if (isset($_POST['text'])) {
     // if file exists, get the encryption key
-    if ($encryption == true) {
+
         if (file_exists($path)) {
             $key = file_get_contents($path);
             $key = json_decode($key, true);
@@ -33,31 +33,23 @@ if (isset($_POST['text'])) {
         } else {
             // generate a random key
             $key = openssl_random_pseudo_bytes(32);
+            $key = bin2hex($key);
         }
 
         $content = $_POST['text'];
+        $hash = md5($content);
         $iv = '1234567890123456';
         $content = openssl_encrypt($content, 'aes-256-cbc', $key, 0, $iv);
 
         $json = array(
             'id' => $_GET['note'],
+            'hash' => $hash,
             'content' => $content,
             'key' => $key,
             'last_modified' => time()
         );
 
         $content = json_encode($json, JSON_PRETTY_PRINT);
-    } else {
-        $content = $_POST['text'];
-
-        $json = array(
-            'id' => $_GET['note'],
-            'content' => $content,
-            'last_modified' => time()
-        );
-
-        $content = json_encode($json, JSON_PRETTY_PRINT);
-    }
 
     file_put_contents($path, $content);
 
@@ -85,11 +77,10 @@ if (isset($raw) || strpos($_SERVER['HTTP_USER_AGENT'], 'curl') === 0 || strpos($
         $json = file_get_contents($path);
         $json = json_decode($json, true);
         $content = $json['content'];
-        if ($encryption == true) {
             $key = $json['key'];
             $iv = '1234567890123456';
             $content = openssl_decrypt($content, 'aes-256-cbc', $key, 0, $iv);
-        }
+        
         if ($raw === 'json') {
             print json_encode(array(
                 'id' => $_GET['note'],
@@ -128,11 +119,10 @@ if (isset($raw) || strpos($_SERVER['HTTP_USER_AGENT'], 'curl') === 0 || strpos($
                 $json = file_get_contents($path);
                 $json = json_decode($json, true);
                 $content = $json['content'];
-                if ($encryption == true) {
                     $key = $json['key'];
                     $iv = '1234567890123456';
                     $content = openssl_decrypt($content, 'aes-256-cbc', $key, 0, $iv);
-                }
+                
                 $content = htmlspecialchars($content, ENT_QUOTES, 'UTF-8');
                 print $content;
             } ?>

@@ -3,7 +3,7 @@
 /* CONFIGURATION */
 var getTimeout = 5000; // 5 seconds
 var postTimeout = 1000; // 1 second
-var showDebug = false; // Show debug messages in console.
+var showDebug = true; // Show debug messages in console.
 /* END CONFIGURATION */
 
 var textarea = document.getElementById('content');
