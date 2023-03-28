@@ -16,6 +16,17 @@ A minimalistic note taking web app, that automatically saves your notes as you t
 - Customizable :wrench:
 - Shareable links :link:
 
+# NOTE: I have my final exams, This repo will be updated soon when I finally have time again.
+
+Sneak peak at: [test.jm26.net/live-notes](https://test.jm26.net/live-notes)
+- New editor with many tools (summernote editor)
+- New preview function added
+- anti code execution added
+- New link sharing option
+- New bookmark system (Add new bookmarks and view them)
+- Bad word filter added
+- Auto afk mode added (To save bandwidth)
+
 ## How to use
 
 1. Go to [https://test.jm26.net/live-notes/](https://test.jm26.net/live-notes/) or your own instance
